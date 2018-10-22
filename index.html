@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="<%= htmlWebpackPlugin.options.templateParameters.baseUrl %>static/layui/css/layui.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="<%= htmlWebpackPlugin.options.templateParameters.baseUrl %>static/polyfill.min.js"></script>
+    <script src="<%= htmlWebpackPlugin.options.templateParameters.baseUrl %>static/layui/layui.js"></script>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

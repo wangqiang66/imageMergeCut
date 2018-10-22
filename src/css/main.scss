@@ -1,0 +1,60 @@
+@import '_var';
+
+body {
+  font-size: $font_normal;
+  font-family: Helvetica, Verdana;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.btn {
+  padding: 0 $gap_normal;
+  height: 30px;
+  line-height: 30px;
+}
+
+.btn.btn-normal {
+  background-color: $color_btn_normal;
+  color: $color_text;
+}
+
+.btn.btn-normal:hover {
+  background-color: $color_btn_normal_hover;
+}
+
+@mixin setFlex($len: 24) {
+  @for $i from 1 through  $len {
+    ".flex#{$i}" {
+      flex: $i
+    }
+  }
+}
+@include setFlex();
+
+/** 偏移距离 **/
+.pad-lr-short {
+  padding-left: $gap_short;
+  padding-right: $gap_short;
+}
+
+.mar-lr-short {
+  margin-left: $gap_short;
+  margin-right: $gap_short;
+}
+
+.pad-b-normal {
+  padding-bottom: $gap_normal;
+}

@@ -1,0 +1,259 @@
+@import '_var';
+
+h3.title {
+  font-size: $font_title_normal;
+  color: $color_light_green;
+  height: $height_title;
+  line-height: $height_title;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+h6.title,
+h5.title {
+  font-size: $font_title_small;
+  color: $color_light_green;
+  height: $height_title_small;
+  line-height: $height_title_small;
+  text-align: center;
+  margin: 0;
+  padding: $gap_top 0 0;
+}
+
+h6.title {
+  font-size: $font_title_smaller;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.list-title-wrap {
+  height: $height_title;
+  justify-content: center;
+  .btn-title {
+    position: absolute;
+    right: 10px;
+  }
+}
+
+.common-list-wrap {
+  border: 1px solid #e2e2e2;
+  width: 100%;
+  padding: $gap_top $gap_short;
+  margin-bottom: 15px;
+}
+
+.color-green {
+  color: $color_btn_normal
+}
+
+.table-wrap {
+  border: 1px solid #e2e2e2;
+  width: 100%;
+  .tr-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    box-sizing: content-box;
+  }
+  .td-li-wrap,
+  .td-wrap {
+    position: relative;
+    border: 1px solid #e2e2e2;
+    display: flex;
+    flex-direction: row;
+    height: $height_table_body;
+    align-items: center;
+    & > .td-text {
+      padding-left: $gap_normal;
+    }
+
+    .input-imports {
+      color: #1ABC9C;
+      padding-left: $gap_shorter;
+    }
+
+    .input-require {
+      color: red;
+      padding-left: $gap_shorter;
+    }
+
+    & > input {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      background-color: transparent;
+      flex: 1;
+      padding: 0 $gap_input;
+    }
+
+    input.el-input__inner {
+      height: $height_table_body;
+      line-height: $height_table_body;
+      border: 0;
+      background-color: transparent;
+    }
+  }
+
+  .td-li-wrap {
+    height: initial;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: $height_table_body;
+  }
+
+  .td-wrap:nth-child(odd) {
+    border-collapse: collapse;
+  }
+
+  .td-wrap:nth-child(even) {
+    border-collapse: collapse;
+  }
+
+  .center-wrap {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .right-wrap {
+    text-align: right;
+    justify-content: flex-end;
+  }
+
+  .operate-wrap {
+    color: $color_light_green;
+    & > div {
+      margin: 0 $gap_shorter;
+      padding: 0 $gap_short;
+      height: $height_table_body;
+      line-height: $height_table_body;
+      font-size: $font-icon;
+    }
+  }
+
+  .el-select {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.btn-date-icon {
+  font-size: $font_title_normal;
+  padding: 6px 6px 6px 0;
+  overflow: hidden;
+  color: #c0c4cc;
+}
+
+.align-middle {
+  align-items: center;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+.check-span {
+  padding-left: $gap_shorter;
+  font-weight: 900;
+}
+
+/** 输入框 **/
+input {
+  padding: 6px 0 6px 6px;
+}
+
+input.input-right {
+  text-align: right;
+}
+
+input.input-center {
+  text-align: center;
+}
+
+input.input-left {
+  text-align: left;
+}
+
+/** 按钮样式 **/
+.btn-div {
+  margin-left: $gap_short;
+  padding: $gap_top $gap_normal;
+  background-color: $color_btn_normal;
+  color: $color_btn_normal_color;
+}
+
+.btn-div:hover {
+  background-color: $color_btn_normal_hover;
+}
+
+.btn-div.btn-red {
+   background-color: $color_btn_red;
+}
+
+.btn-div.btn-red:hover {
+  background-color: $color_btn_red_hover;
+}
+
+select:focus {
+  background-color: $color_input_hover;
+}
+
+.layer-query-list-clip {
+  .clip-title {
+    padding: 0 8px;
+    background-color: #fff;
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .layui-table {
+    margin: 0;
+  }
+  .clip-img-wrap {
+    padding: 0 10px;
+    img {
+      width: 100%;
+    }
+  }
+  .clip-table-wrap {
+    padding: 0 10px;
+  }
+
+  .layui-table[lay-skin="line"] th, .layui-table[lay-skin="line"] td {
+    border-right-width: 1px;
+    text-align: center;
+  }
+
+  .form-wrap {
+    padding: 20px 10px;
+    height: 80px;
+    font-size: 15px;
+    & > div {
+      height: 100%;
+      padding-right: 25px;
+    }
+    select, input {
+      height: 100%;
+      width: 160px;
+      box-sizing: border-box;
+      border: 1px solid #eee;
+      text-align: center;
+    }
+  }
+}
+
+.image-box .el-dialog__body {
+  padding-top: 0px;
+}
